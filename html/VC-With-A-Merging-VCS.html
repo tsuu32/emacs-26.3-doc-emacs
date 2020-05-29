@@ -80,12 +80,10 @@ Next: <a href="VC-With-A-Locking-VCS.html" accesskey="n" rel="next">VC With A Lo
 </li><li> VCファイルセットの各作業ファイルが変更されている場合、変更をコミットします。これを行うには、Emacsが<samp>*vc-log*</samp>バッファーをポップアップするので、新しいリビジョンのログエントリーをタイプしてから、<kbd>C-c
 C-c</kbd>でコミットします。<a href="Log-Buffer.html">Log Buffer</a>を参照してください。
 
-<p>If committing to a shared repository, the commit may fail if the repository
-has been changed since your last update.  In that case, you must perform an
-update before trying again.  On a decentralized version control system, use
-<kbd>C-x v +</kbd> (see <a href="Pulling-_002f-Pushing.html">Pulling / Pushing</a>) or <kbd>C-x v m</kbd>
-(see <a href="Merging.html">Merging</a>).  On a centralized version control system, type <kbd>C-x v
-v</kbd> again to merge in the repository changes.
+<p>共有リポジトリーにコミットする場合、最後に更新したときからリポジトリーが変更されているときは、コミットが失敗するでしょう。このような場合、再試行する前に更新をしなければなりません。分散型のバージョンコントロールシステムでは、<kbd>C-x
+v +</kbd>(<a href="Pulling-_002f-Pushing.html">Pulling / Pushing</a>を参照してください)、または<kbd>C-x v
+m</kbd>を使用します(<a href="Merging.html">Merging</a>を参照してください)。集中型のバージョンコントロールシステムでは、リポジトリーに変更をマージするために、再度<kbd>C-x
+v v</kbd>とタイプしてください。
 </p>
 </li><li> 最後に、集中型のバージョンコントロールシステムでは、VCファイルセットの各ファイルが最新かチェックします。リポジトリーで変更されたファイルがある場合、更新を提案します。
 </li></ul>
