@@ -3,6 +3,7 @@
 @c This file was generated with po4a. Translate the source file.
 @c
 @c ===========================================================================
+
 @c -*- coding: utf-8 -*-
 @c This is part of the Emacs manual.
 @c Copyright (C) 2005-2019 Free Software Foundation, Inc.

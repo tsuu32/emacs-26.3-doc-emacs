@@ -3,6 +3,7 @@
 @c This file was generated with po4a. Translate the source file.
 @c
 @c ===========================================================================
+
 @c This is part of the Emacs manual., Abbrevs, This is part of the Emacs manual., Top
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 1999-2019 Free Software
 @c Foundation, Inc.
@@ -345,10 +346,12 @@ VCファイルセットの、すべての作業ファイルが変更されてい
 VCファイルセットの各作業ファイルが変更されている場合、変更をコミットします。これを行うには、Emacsが@file{*vc-log*}バッファーをポップアップするので、新しいリビジョンのログエントリーをタイプしてから、@kbd{C-c
 C-c}でコミットします。@ref{Log Buffer}を参照してください。
 
-共有リポジトリーにコミットする場合、最後に更新したときからリポジトリーが変更されているときは、コミットが失敗するでしょう。このような場合、再試行する前に更新をしなければなりません。分散型のバージョンコントロールシステムでは、@kbd{C-x
-v +}(@ref{Pulling / Pushing}を参照してください)、またh@kbd{C-x v
-m}を使用します(@ref{Merging}を参照してください)。集中型のバージョンコントロールシステムでは、リポジトリーに変更をマージするために、再度@kbd{C-x
-v v}とタイプしてください。
+If committing to a shared repository, the commit may fail if the repository
+has been changed since your last update.  In that case, you must perform an
+update before trying again.  On a decentralized version control system, use
+@kbd{C-x v +} (@pxref{Pulling / Pushing}) or @kbd{C-x v m}
+(@pxref{Merging}).  On a centralized version control system, type @kbd{C-x v
+v} again to merge in the repository changes.
 
 @item
 最後に、集中型のバージョンコントロールシステムでは、VCファイルセットの各ファイルが最新かチェックします。リポジトリーで変更されたファイルがある場合、更新を提案します。
